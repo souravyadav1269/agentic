@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>RideGo - Book Your Ride</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="logo">Ride<span>Go</span></div>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Your Ride, Your Way.</h1>
+<p>Book a comfortable and affordable ride in seconds.</p>
+
+<div class="booking-card">
+<h2>Book a Ride</h2>
+
+<div class="input-box">
+<span>📍</span>
+<input id="pickup" type="text" placeholder="Enter pickup location">
+</div>
+
+<div class="input-box">
+<span>🏁</span>
+<input id="destination" type="text" placeholder="Enter destination">
+</div>
+
+<div class="ride-options">
+
+<div class="ride active" data-type="Bike" data-price="8">
+<div>🏍️</div>
+<b>Bike</b>
+<small>₹8/km</small>
+</div>
+
+<div class="ride" data-type="Auto" data-price="12">
+<div>🛺</div>
+<b>Auto</b>
+<small>₹12/km</small>
+</div>
+
+<div class="ride" data-type="Cab" data-price="18">
+<div>🚕</div>
+<b>Cab</b>
+<small>₹18/km</small>
+</div>
+
+</div>
+
+<button id="bookBtn">Book Ride</button>
+</div>
+</div>
+</section>
+
+<section class="features">
+<h2>Why Choose RideGo?</h2>
+
+<div class="feature-container">
+
+<div class="feature">
+<div>⚡</div>
+<h3>Quick Booking</h3>
+<p>Book your ride within seconds.</p>
+</div>
+
+<div class="feature">
+<div>💰</div>
+<h3>Affordable</h3>
+<p>Transparent and budget-friendly fares.</p>
+</div>
+
+<div class="feature">
+<div>🛡️</div>
+<h3>Safe Rides</h3>
+<p>Your safety is our priority.</p>
+</div>
+
+</div>
+</section>
+
+<div id="result" class="result hidden">
+
+<div class="result-card">
+
+<button id="closeResult">×</button>
+
+<div class="success">✓</div>
+
+<h2>Ride Booked!</h2>
+
+<p id="rideDetails"></p>
+
+<div class="driver">
+<div class="driver-icon">👨‍✈️</div>
+<div>
+<b>Raj Kumar</b>
+<p>⭐ 4.8 • Your driver</p>
+</div>
+</div>
+
+<p class="car">🚕 White Swift Dzire • UP 16 AB 1234</p>
+
+<button id="trackBtn">Track Ride</button>
+
+</div>
+</div>
+
+<footer>
+<h3>RideGo</h3>
+<p>Simple Ride Booking Web Application</p>
+<p>Project by <b>Pankaj Sisodiya</b></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
